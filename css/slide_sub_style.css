@@ -1,0 +1,41 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+body{
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+.nav{
+  margin: 30px;
+}
+.nav> li{
+  float: left;
+  margin-right: 10px;
+  position: relative/*3번*/;
+}
+.nav> li> a{
+  display: block;
+  padding: 10px 30px;
+  background-color: skyblue;
+}
+.nav> li:hover> a{/*서브메뉴쪽에 마우스가 가 있어도 메인메뉴에 색이 바꼈으면 해서 li에 호버*/
+  background-color: pink;
+}
+.sub a{/*1번*/
+  display: block;
+  padding: 10px 0;/*양옆 안되!*/
+  text-align: center;
+  background-color: yellowgreen;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.sub a:hover{/*2번*/
+  background-color: burlywood;
+}
+.sub{/*3번*/
+  position: absolute;
+  width: 100%;/*4번. li크기만큼 커짐*/
+  display: none;/*5번 사라지게만...나타나게하는건 제이쿼리에서 할것(충돌남)*/
+}
