@@ -1205,7 +1205,7 @@ nav ul li:hover{
     display: none;
   }
   .fixedmenu{
-    display: none;
+    display: none!important;
   }
 
 
