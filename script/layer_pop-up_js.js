@@ -1,5 +1,5 @@
 $(function(){
-  $(".check2 .submit").click(function(){
+  $(".check2 .view").click(function(){
     $(".popup").fadeIn();/*서서히나타남*/
   });
   $(".popup .close").click(function(){
